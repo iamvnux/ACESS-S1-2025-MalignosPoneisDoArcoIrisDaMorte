@@ -1,6 +1,3 @@
--- -----------------------------------------------------
--- Estrutura de Banco de Dados para o site
--- -----------------------------------------------------
 
 CREATE DATABASE Site;
 USE Site;
