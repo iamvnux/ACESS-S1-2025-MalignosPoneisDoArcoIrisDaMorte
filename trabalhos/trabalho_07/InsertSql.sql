@@ -326,53 +326,7 @@ INSERT INTO paginas (nome,conteudo) VALUES
                 <img src="imagens/aviso1Ingressos.png" class="img-fluid" alt="Aviso de controle de acesso">
             </div>
         </div>
-    </div>
-    <main class="container my-5">
-        <div class="row g-4 text-center">
-            <div class="col-md-4">
-                <div class="text-center">
-                    <img src="imagens/ingresso1.png" class="img-fluid" alt="Ingresso básico">
-                    <a href="imagens/ingresso1.png" download="ingresso_basico" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="text-center">
-                    <img src="imagens/ingresso2.png" class="img-fluid" alt="Ingresso VIP">
-                    <a href="imagens/ingresso2.png" download="ingresso_vip" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="text-center">
-                    <img src="imagens/ingresso3.png" class="img-fluid" alt="Ingresso oficina">
-                    <a href="imagens/ingresso3.png" download="ingresso_oficina" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="text-center">
-                    <img src="imagens/ingresso4.png" class="img-fluid" alt="Ingresso cosplay">
-                    <a href="imagens/ingresso4.png" download="ingresso_cosplay" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="text-center">
-                    <img src="imagens/ingresso5.png" class="img-fluid" alt="Ingresso estudante">
-                    <a href="imagens/ingresso5.png" download="ingresso_estudante" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="text-center">
-                    <img src="imagens/ingresso6.png" class="img-fluid" alt="Ingresso familia">
-                    <a href="imagens/ingresso6.png" download="ingresso_familia" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
-                </div>
-            </div>
-        </div>
-        <section class="my-5">
-            <h2 class="fw-bold">Ingresso Gratuito, Acesso Exclusivo com Apresentação Física</h2>
-            <p>Os ingressos para o Fatecon são gratuitos, mas para garantir seu acesso ao evento, é necessário imprimir o ingresso e apresentá-lo fisicamente na entrada. Essa medida é adotada para garantir o controle adequado de público e a segurança de todos os participantes.</p>
-            <h2 class="fw-bold mt-4">Controle de acesso</h2>
-            <p>Embora os ingressos sejam gratuitos, pedimos que, ao chegar ao evento, você apresente o ingresso impresso. Isso facilita o controle de entrada, garantindo uma melhor organização e segurança durante o evento. Certifique-se de ter seu ingresso impresso para evitar contratempos.</p>
-        </section>
-</main>')
+    </div>')
 
 --Pagina Business --
 ,('business','<main>
@@ -526,4 +480,26 @@ INSERT INTO programacao (titulo,conteudo_imagem,imagem_conteudo, data_hora) VALU
         </div>'
 ,'2024/05/22');            
      
+-- inserindo ingressos na pagina ingressos --
+
+INSERT INTO ingressos (tipo,descricao) VALUES
+('basico','<img src="imagens/ingresso1.png" class="img-fluid" alt="Ingresso básico">
+ <a href="imagens/ingresso1.png" download="ingresso_basico" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
+ ')
+,('vip','<img src="imagens/ingresso2.png" class="img-fluid" alt="Ingresso VIP">
+<a href="imagens/ingresso2.png" download="ingresso_vip" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
+')
+,('oficina','<img src="imagens/ingresso3.png" class="img-fluid" alt="Ingresso oficina">
+ <a href="imagens/ingresso3.png" download="ingresso_oficina" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
+')
+,('cosplay',' <img src="imagens/ingresso4.png" class="img-fluid" alt="Ingresso cosplay">
+  <a href="imagens/ingresso4.png" download="ingresso_cosplay" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
+')
+,('estudante',' <img src="imagens/ingresso5.png" class="img-fluid" alt="Ingresso estudante">
+  <a href="imagens/ingresso5.png" download="ingresso_estudante" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
+')
+,('familia',' <img src="imagens/ingresso6.png" class="img-fluid" alt="Ingresso familia">
+<a href="imagens/ingresso6.png" download="ingresso_familia" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
+');
+
 

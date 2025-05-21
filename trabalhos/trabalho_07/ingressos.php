@@ -37,9 +37,12 @@ $conn->close();
 
     <main>
        
-        <div>
+        
             <?php echo $conteudo; ?>
-        </div>
+            <div>
+              <?php include('php/tipoIngressos.php'); ?>  
+            </div>
+        
     </main>
 
     <?php include('php/footer.php'); ?>
