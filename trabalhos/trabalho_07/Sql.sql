@@ -1,3 +1,5 @@
+Estrutura de Banco de Dados para o site
+
 
 CREATE DATABASE Site;
 USE Site;
@@ -35,9 +37,10 @@ CREATE TABLE noticias (
 -- Tabela para programação do evento
 CREATE TABLE programacao (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    titulo VARCHAR(255),
-    descricao TEXT,
-    data_hora DATETIME
+    titulo TEXT,
+    conteudo_imagem TEXT,
+    imagem_conteudo TEXT,
+    data_hora DATE
 );
 
 -- Tabela para ingressos

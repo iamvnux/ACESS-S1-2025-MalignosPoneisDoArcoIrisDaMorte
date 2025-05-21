@@ -1,4 +1,3 @@
-
 <?php
 $conn = new mysqli("localhost", "root", "", "Site");
 if ($conn->connect_error) {
@@ -6,3 +5,4 @@ if ($conn->connect_error) {
 }
 
 ?>
+

@@ -1,8 +1,12 @@
+-- Inserindo dados em todas as Tabelas --
 
 USE Site;
 
--- Inserir dados iniciais na tabela paginas
+-- Inserir dados iniciais na tabela paginas --
+
+
 INSERT INTO paginas (nome,conteudo) VALUES
+-- Pagina Index --
 ('index', '
 <img src="imagens/imagemIndex.png" class="container-fluid imagemIndex" alt="Imagem colorida escrita Fatecon">
 <hr>
@@ -62,70 +66,28 @@ INSERT INTO paginas (nome,conteudo) VALUES
     </div>
 </main>
 '),
-('faq', '<div class="container my-5">
-        <div class="row gy-5">
-            <div class="col-lg-5 offset-lg-1">
-                <article>
-                    <h2 class="mb-4">FAQ - Fatecon</h2>
-                    <p>Nosso FAQ funciona 24 horas para apoiar as indagações dos usuários e permitir uma boa
-                        experiência.</p>
-                    <p>Adicione aqui suas perguntas e dúvidas sobre o evento, e em breve nossa equipe entrará em contato
-                        por e-mail.</p>
 
-                    <form action="./php/formFaq.php" method="post" class="mx-auto" style="max-width: 600px;">
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-mail</label>
-                            <input type="email" name="email" class="form-control"placeholder="Insira seu e-mail" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="duvida" class="form-label">Dúvida</label>
-                            <textarea class="form-control" name="duvida" rows="3" placeholder="Digite sua dúvida"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                    </form>
-                </article>
-            </div>
-            <div class="col-lg-5">
-                <aside>
-                    <section>
-                        <h2 class="mb-4">Perguntas Frequentes</h2>
-                        <ul class="list-unstyled">
-                            <li class="mb-3">
-                                <strong>Qual a localização do evento?</strong>
-                                <p>Escola Horácio Manley Lane - Av. João Pessoa, 556 - Centro, São Roque - SP,
-                                    18130-000.</p>
-                            </li>
-                            <li class="mb-3">
-                                <strong>Qual o horário de início?</strong>
-                                <p>Inicia às 10 horas da manhã dos dias 20 e 21 de setembro.</p>
-                            </li>
-                            <li class="mb-3">
-                                <strong>Qual a motivação desse encontro?</strong>
-                                <p>Expor o trabalho dos autores e compartilhar a cultura geek.</p>
-                            </li>
-                            <li class="mb-3">
-                                <strong>Posso ir vestido com qualquer tipo de roupa?</strong>
-                                <p>Sim, pode usar roupas normais ou ir vestido de cosplay.</p>
-                            </li>
-                            <li class="mb-3">
-                                <strong>Consigo expor meu trabalho na Fatecon?</strong>
-                                <p>Sim, entre em contato com nossa equipe clicando no botão abaixo:</p>
-                                <a href="business.php" class="btn btn-primary w-5">
-                                <i class="bi bi-briefcase-fill me-2"></i> Ir para Business
-                                </a>
-                            </li>
-                            <li class="mb-3">
-                                <strong>Quando será a próxima Fatecon?</strong>
-                                <p>Está programada para acontecer entre o meio e o final do próximo ano. Informaremos
-                                    pelo site em breve.</p>
-                            </li>
-                        </ul>
-                    </section>
-                </aside>
-            </div>
+-- Pagina FAQ --
+('faq', '<article>
+    <h2 class="mb-4">FAQ - Fatecon</h2>
+    <p>Nosso FAQ funciona 24 horas para apoiar as indagações dos usuários e permitir uma boa experiência.</p>
+    <p>Adicione aqui suas perguntas e dúvidas sobre o evento, e em breve nossa equipe entrará em contatos por e-mail.</p>
+
+    <form action="./php/formFaq.php" method="post" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" name="email" class="form-control" placeholder="Insira seu e-mail" required>
         </div>
-    </div>'),
-('quemsomos', '<div class="container" style="text-align: justify; padding: 20px">
+        <div class="mb-3">
+            <label for="duvida" class="form-label">Dúvida</label>
+            <textarea class="form-control" name="duvida" rows="3" placeholder="Digite sua dúvida"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+    </form>
+</article>')
+
+--Pagina Quem Somos --
+,('quemsomos', '<div class="container" style="text-align: justify; padding: 20px">
 
         <article>
             <div class="row m-4 align-items-center">
@@ -185,6 +147,8 @@ INSERT INTO paginas (nome,conteudo) VALUES
 
         </article>
     </div>'),
+
+-- Pagina localização --
 ('localizacao', '<div class="articleLocalizacao">
 
     <div class="m-5 sectionLocalizacao">
@@ -214,8 +178,10 @@ INSERT INTO paginas (nome,conteudo) VALUES
             </div>
         </div>
     </div>
-</div>'),
-('normas', ' <div class="container-fluid" style="text-align: justify; padding: 30px">
+</div>')
+
+-- Pagina Normas --
+,('normas', ' <div class="container-fluid" style="text-align: justify; padding: 30px">
         <div class="row justify-content-center">
 
         <div class="col-lg-8 col-md-10 col-sm-12">
@@ -254,7 +220,10 @@ INSERT INTO paginas (nome,conteudo) VALUES
                 </figure>
             </div>
         </div>
-    </div>'),('noticias', '<main class="container articleNoticias">
+</div>')
+
+-- Pagina Noticias --
+,('noticias', '<main class="container articleNoticias">
 
     <div class="row mb-4">
         <div class="col-md-12">
@@ -342,68 +311,13 @@ INSERT INTO paginas (nome,conteudo) VALUES
     <div class="text-center btn-voltar">
         <a href="#" class="btn btn-outline-secondary">Voltar ao topo</a>
     </div>
-</main>'),
-('programacao', '<div class="articleProgramacao">
-<section class="m-5 sectionprogramacao">
-    <div class="row align-items-center">
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
-            <img src="imagens/cecilia.jpg" class="img-fluid" alt="Foto da Cecília Marins">
-        </div>
-        <div class="col-12 col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">FATECon HQs 2024 – Sexta-feira: 10h-11h</h5>
-                <p class="card-text">Oficina "Você em HQ" com Cecília Marins. Aprenda a transformar suas histórias em quadrinhos usando técnicas de narrativa visual e criação de personagens. Atividade para todos os níveis, focada em despertar criatividade e produzir um esboço de sua própria HQ!</p>
-                <a href="https://www.instagram.com/fateconhqs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary">
-                    <i class="bi bi-box-arrow-right"></i> Saiba Mais
-                </a>
-                <div class="m-1">
-                    <a href="https://www.instagram.com/fateconhqs/" target="_blank">
-                        <i class="bi bi-instagram fs-3"></i>
-                    </a>
-                    <a href="https://x.com/governosp/" target="_blank">
-                        <i class="bi bi-twitter-x fs-3"></i>
-                    </a>
-                    <a href="https://www.facebook.com/governosp/" target="_blank">
-                        <i class="bi bi-facebook fs-3"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+</main>')
 
+-- Pagina Programação--
+-- em construção --
 
-    <section class="m-5 sectionprogramacao">
-        <div class="row align-items-center">
-
-            <div class="col-12 col-md-4 order-1 order-md-2">
-                <img src="imagens/marco.jpg" class="img-fluid rounded-start" alt="Foto de Marco A. Cortez">
-            </div>
-
-            <div class="col-12 col-md-8 order-2 order-md-1 mb-4 mb-md-0">
-                <div class="card-body">
-                    <h5 class="card-title">FATECon HQs 2024 – Sábado: 10h-11h</h5>
-                    <p class="card-text">Personagens são a alma de qualquer história, e nesta oficina com Marco A. Cortez, você aprenderá como criar personagens memoráveis e cheios de vida. Marco, conhecido por suas ilustrações expressivas, abordará aspectos como design, construção de personalidade e desenvolvimento de backstory. A oficina começa com exercícios práticos de esboço, seguidos por técnicas para criar protagonistas e antagonistas envolventes. Você explorará como os traços físicos e psicológicos podem contar histórias e conectar-se com o público. Ao final, os participantes terão criado personagens únicos, prontos para ganhar vida em suas próprias histórias ou projetos futuros.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="m-5 sectionprogramacao">
-        <div class="row align-items-center">
-            <div class="col-12 col-md-4 mb-4 mb-md-0">
-                <img src="imagens/rafael.jpg" class="img-fluid rounded-start" alt="Foto de Rafael Marçal">
-            </div>
-            <div class="col-12 col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">FATECon HQs 2024 – 20/09 e 21/09</h5>
-                    <p class="card-text">Já pensou em se tornar um quadrinista profissional? Rafael Marçal, artista conhecido por suas tirinhas e quadrinhos bem-humorados, compartilhará suas experiências no mundo das HQs. Neste bate-papo, ele abordará desde os desafios iniciais até a rotina de trabalho e os segredos para se destacar em um mercado competitivo. Rafael discutirá o processo criativo, desde a ideia até o produto final, passando pelo roteiro, ilustração e publicação. Ele também responderá perguntas do público sobre como começar na carreira, buscar oportunidades e lidar com os desafios do mercado. Uma conversa essencial para quem sonha em transformar a paixão por quadrinhos em profissão.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>'),
-('ingressos','    <div class="container my-5">
+-- Pagina ingressos --
+,('ingressos','    <div class="container my-5">
         <div class="row g-4">
             <div class="col-6">
                 <img src="imagens/avisoIngressos.png" class="img-fluid" alt="Aviso de acesso com crianças">
@@ -458,8 +372,10 @@ INSERT INTO paginas (nome,conteudo) VALUES
             <h2 class="fw-bold mt-4">Controle de acesso</h2>
             <p>Embora os ingressos sejam gratuitos, pedimos que, ao chegar ao evento, você apresente o ingresso impresso. Isso facilita o controle de entrada, garantindo uma melhor organização e segurança durante o evento. Certifique-se de ter seu ingresso impresso para evitar contratempos.</p>
         </section>
-    </main>'),
-	 ('business','<main>
+</main>')
+
+--Pagina Business --
+,('business','<main>
 <div class="container main-content">
     <div class="row">
         <div class="col-md-6">
@@ -529,4 +445,85 @@ INSERT INTO paginas (nome,conteudo) VALUES
     </div>
 </div>
 </main>');
+
+
+-- Inserindo Dados Na tabela de perguntas da pagina FAQ --
+
+INSERT INTO faq (pergunta, resposta) VALUES
+('Qual a localização do evento?','Escola Horácio Manley Lane - Av. João Pessoa, 556 - Centro, São Roque - SP, 18130-000.')
+,('Qual o horário de início?','Inicia às 10 horas da manhã dos dias 20 e 21 de setembro.')
+,('Qual a motivação desse encontro?','Expor o trabalho dos autores e compartilhar a cultura geek.')
+,('Posso ir vestido com qualquer tipo de roupa?','Sim, pode usar roupas normais ou ir vestido de cosplay.')
+,('Consigo expor meu trabalho na Fatecon?','Sim, entre em contato com nossa equipe clicando no botão abaixo:<a href="business.php" class="btn btn-primary w-5"><i class="bi bi-briefcase-fill me-2"></i> Ir para Business</a>')
+,('Quando será a próxima Fatecon?','Está programada para acontecer entre o meio e o final do próximo ano. Informaremos pelo site em breve.');
+
+
+-- Inserindo Dados Na Pagina de Programações--
+
+INSERT INTO programacao (titulo,conteudo_imagem,imagem_conteudo, data_hora) VALUES
+('FATECon HQs 2024 – Sexta-feira: 10h-11h'
+,'<img src="imagens/cecilia.jpg" class="img-fluid" alt="Foto da Cecília Marins">'
+,  ' <div class="card-body">                
+       <p class="card-text">Personagens são a alma de qualquer história, e nesta oficina com Marco A. Cortez, você aprenderá como criar personagens memoráveis e cheios de vida. Marco, conhecido por suas ilustrações expressivas, abordará aspectos como design, construção de personalidade e desenvolvimento de backstory. A oficina começa com exercícios práticos de esboço, seguidos por técnicas para criar protagonistas e antagonistas envolventes. Você explorará como os traços físicos e psicológicos podem contar histórias e conectar-se com o público. Ao final, os participantes terão criado personagens únicos, prontos para ganhar vida em suas próprias histórias ou projetos futuros.</p>
+       <a href="https://www.instagram.com/fateconhqs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary">
+         <i class="bi bi-box-arrow-right"></i> Saiba Mais</a>
+     </div>
+     <div class="m-1">
+       <a href="https://www.instagram.com/fateconhqs/" target="_blank">
+        <i class="bi bi-instagram fs-3"></i>
+       </a>
+       <a href="https://x.com/governosp/" target="_blank">
+        <i class="bi bi-twitter-x fs-3"></i>
+       </a>
+       <a href="https://www.facebook.com/governosp/" target="_blank">
+        <i class="bi bi-facebook fs-3"></i>
+       </a>
+     </div>
+   </div>'
+,'2024/05/20')
+
+,('FATECon HQs 2024 – Sábado: 10h-11h'
+,  '<img src="imagens/marco.jpg" class="img-fluid rounded-start" alt="Foto de Marco A. Cortez">'
+,'<div class="card-body">
+                <p class="card-text">Oficina "Você em HQ" com Cecília Marins. Aprenda a transformar suas histórias em quadrinhos usando técnicas de narrativa visual e criação de personagens. Atividade para todos os níveis, focada em despertar criatividade e produzir um esboço de sua própria HQ!</p>
+                <a href="https://www.instagram.com/fateconhqs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary">
+                    <i class="bi bi-box-arrow-right"></i> Saiba Mais
+                </a>
+                <div class="m-1">
+                    <a href="https://www.instagram.com/fateconhqs/" target="_blank">
+                        <i class="bi bi-instagram fs-3"></i>
+                    </a>
+                    <a href="https://x.com/governosp/" target="_blank">
+                        <i class="bi bi-twitter-x fs-3"></i>
+                    </a>
+                    <a href="https://www.facebook.com/governosp/" target="_blank">
+                        <i class="bi bi-facebook fs-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>'
+,'2024/05/21')
+
+,('FATECon HQs 2024 – 20/09 e 21/09'
+,'<img src="imagens/rafael.jpg" class="img-fluid rounded-start" alt="Foto de Rafael Marçal">'
+,  ' <div class="card-body">
+                <p class="card-text">Já pensou em se tornar um quadrinista profissional? Rafael Marçal, artista conhecido por suas tirinhas e quadrinhos bem-humorados, compartilhará suas experiências no mundo das HQs. Neste bate-papo, ele abordará desde os desafios iniciais até a rotina de trabalho e os segredos para se destacar em um mercado competitivo. Rafael discutirá o processo criativo, desde a ideia até o produto final, passando pelo roteiro, ilustração e publicação. Ele também responderá perguntas do público sobre como começar na carreira, buscar oportunidades e lidar com os desafios do mercado. Uma conversa essencial para quem sonha em transformar a paixão por quadrinhos em profissão.</p>
+                <a href="https://www.instagram.com/fateconhqs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary">
+                    <i class="bi bi-box-arrow-right"></i> Saiba Mais
+                </a>
+                <div class="m-1">
+                    <a href="https://www.instagram.com/fateconhqs/" target="_blank">
+                        <i class="bi bi-instagram fs-3"></i>
+                    </a>
+                    <a href="https://x.com/governosp/" target="_blank">
+                        <i class="bi bi-twitter-x fs-3"></i>
+                    </a>
+                    <a href="https://www.facebook.com/governosp/" target="_blank">
+                        <i class="bi bi-facebook fs-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>'
+,'2024/05/22');            
+     
 
