@@ -65,10 +65,10 @@ INSERT INTO paginas (nome,conteudo) VALUES
         </div>
     </div>
 </main>
-'),
+')
 
 -- Pagina FAQ --
-('faq', '<article>
+,('faq', '<article>
     <h2 class="mb-4">FAQ - Fatecon</h2>
     <p>Nosso FAQ funciona 24 horas para apoiar as indagações dos usuários e permitir uma boa experiência.</p>
     <p>Adicione aqui suas perguntas e dúvidas sobre o evento, e em breve nossa equipe entrará em contatos por e-mail.</p>
@@ -86,11 +86,11 @@ INSERT INTO paginas (nome,conteudo) VALUES
     </form>
 </article>')
 
---Pagina Quem Somos por hora vazio --
-,
+-- Pagina Quem Somos por hora vazio --
+
 
 -- Pagina localização --
-('localizacao', '<div class="articleLocalizacao">
+,('localizacao', '<div class="articleLocalizacao">
 
     <div class="m-5 sectionLocalizacao">
         <div class="map-container">
@@ -269,7 +269,7 @@ INSERT INTO paginas (nome,conteudo) VALUES
         </div>
     </div>')
 
---Pagina Business --
+-- Pagina Business --
 ,('business','<main>
 <div class="container main-content">
     <div class="row">
