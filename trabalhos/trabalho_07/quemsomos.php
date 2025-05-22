@@ -35,9 +35,10 @@ $conn->close();
     <?php include('php/header.php'); ?>
 
     <main>
+        
        
         <div>
-            <?php echo $conteudo; ?>
+            <?php include('php/integrantesQuemSomos.php'); ?>
         </div>
     </main>
 
