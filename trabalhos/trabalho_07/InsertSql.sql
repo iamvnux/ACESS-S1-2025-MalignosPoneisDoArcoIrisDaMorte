@@ -86,67 +86,8 @@ INSERT INTO paginas (nome,conteudo) VALUES
     </form>
 </article>')
 
---Pagina Quem Somos --
-,('quemsomos', '<div class="container" style="text-align: justify; padding: 20px">
-
-        <article>
-            <div class="row m-4 align-items-center">
-                <div class="col-12 col-lg-4 offset-lg-1 text-center order-lg-last">
-                    <figure>
-                        <img src="imagens/Bryan.png" alt="Imagem do Bryan" class="img-fluid rounded">
-                    </figure>
-                </div>
-                <div class="col-12 col-lg-7">
-                    <h2>Bryan Cadmiel Evangelista de Souza</h2>
-                    <h3>RA: 2650832413001</h3>
-                    <p>Conhecido simplesmente como Bryan, é um jovem de 22 anos residente em Mairinque, São Paulo. Nascido em Mairinque no dia 3 de fevereiro de 2002, Bryan é irmão de quatro meninos e uma menina. Sua trajetória educacional começou na Escola Estadual Altina Julia de Oliveira, onde concluiu seu ensino médio. Demonstrando interesse precoce pela área de tecnologia, Bryan cursou Lógica de Programação pela Universidade de São Paulo (USP), o que lhe abriu portas para o campo digital. Além de seu comprometimento acadêmico, Bryan possui hobbies que revelam um interesse profundo por temas como sobrevivência e auto-suficiência. Estas atividades refletem seu desejo de se preparar para situações adversas e seu gosto por aprender constantemente. Atualmente, Bryan dedica-se a trabalhos de gerenciamento de redes sociais, criação de sites e produção de mídia digital. Ele aspira a uma carreira que lhe permita trabalhar de qualquer lugar do mundo, buscando sempre a calma e o contínuo aprimoramento profissional. Inspirado pelo exemplo de seus pais e avós, que sempre agiram de forma correta e transparente, Bryan segue uma trajetória orientada por princípios sólidos. A decisão de cursar a Faculdade de Tecnologia foi influenciada por uma profunda crença em Deus e no direcionamento divino em sua vida sendo Profetizado por duas vezes a área tecnológica em sua vida e eventos como a inscrição para a faculdade em questão ser indicada por um amigo após este evento. Demonstrando sua fé e a confiança nos caminhos que escolhe seguir. Bryan é um exemplo de jovem determinado, que alia fé, família e profissional.</p>
-                    <p>Funções: Coder e designer (UI/UX)</p>
-                    <a href="noticias.php" class="btn btn-primary w-5"><i class="bi bi-newspaper me-2"></i> Notícias</a>
-                    <a href="programacao.php" class="btn btn-primary w-5"><i class="bi bi-calendar"></i> Programação</a>
-                    <a href="localizacao.php" class="btn btn-primary w-5"><i class="bi bi-geo-alt me-2"></i> Localização</a>
-                </div>
-            </div>
-
-            <div class="row m-4 align-items-center">
-                <div class="col-lg-4 text-center">
-                    <figure>
-                        <img src="imagens/livia.jpg" alt="Imagem Da Lívia" class="img-fluid rounded">
-                    </figure>
-                </div>
-                <div class="col-lg-8">
-                    <h2>Lívia Ferreira Dias</h2>
-                    <h3>RA: 2650832413016</h3>
-                    <p>Conhecida como Vênus, nasceu em São Roque em 29 de dezembro de 2004, e tem 19 anos. Ela sempre viveu nesta cidade, onde ainda reside. Concluiu o ensino médio no Instituto Federal Campus São Roque, onde também fez um curso técnico em meio ambiente. Lívia tem uma irmã mais nova, com quem mantém um vínculo familiar forte. Ela possui um interesse profundo por jogos online e design gráfico, hobbies que utiliza para se expressar e desenvolver habilidades criativas. Susan Kare, uma pioneira no design de interfaces gráficas, é sua grande inspiração. Lívia trabalha como recepcionista em uma clínica de saúde ocupacional, onde adquiriu valiosas habilidades de comunicação e organização. Atualmente, cursa Sistemas para Internet na Faculdade de Tecnologia, uma área que considera promissora em termos de empregabilidade. Seu objetivo é se formar em breve, continuar com cursos de pós-graduação e alcançar uma posição que ofereça um bom emprego e um salário satisfatório, consolidando uma carreira no setor de tecnologia.</p>
-                    <p>Funções: Líder, Coder e designer (UI/UX)</p>
-                    <div>
-                        <a href="business.php" class="btn btn-primary me-2"><i class="bi bi-briefcase-fill me-2"></i>Business</a>
-                        <a href="index.php" class="btn btn-primary me-2"><i class="bi bi-house-door-fill me-2"></i>Home</a>
-                        <a href="ingressos.php" class="btn btn-primary"><i class="bi bi-ticket-perforated-fill me-2"></i>Ingressos</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row m-4 align-items-center">
-                <div class="col-12 col-lg-4 text-center order-1 order-lg-1">
-                    <figure>
-                        <img src="imagens/Wesley.png" alt="Imagem do Wesley" class="img-fluid rounded">
-                    </figure>
-                </div>
-                <div class="col-12 col-lg-8 order-2 order-lg-0">
-                    <h2>Wesley Washington de Oliveira dos Santos Brito</h2>
-                    <h3>RA: 2650832413025</h3>
-                    <p>Conhecido como Wesley, tem 26 anos, é morador de São Roque desde sempre e fez o Ensino Médio na Escola Horácio Manley Lane. Iniciou Engenharia Civil na Uniso, mas a vida o trouxe a ser mecânico no bairro onde reside. Está em processo de mudança para áreas de tecnologia e gosta de jogos, filmes e séries. Seu objetivo é trabalhar remotamente e aproveitar a vida. Seu caminho até os dias de hoje é inspirado por superações, e ele busca evoluir por determinação.</p>
-                    <p>Funções: Coder e designer (UI/UX)</p>
-                    <div>
-                        <a href="faq.php" class="btn btn-primary me-2"><i class="bi bi-question-circle-fill me-2"></i>FAQ</a>
-                        <a href="normas.php" class="btn btn-primary me-2"><i class="bi bi-file-earmark-text-fill me-2"></i>Normas</a>
-                        <a href="quem_somos.php" class="btn btn-primary"><i class="bi bi-person-lines-fill me-2"></i>Quem Somos</a>
-                    </div>
-                </div>
-            </div>
-
-        </article>
-    </div>'),
+--Pagina Quem Somos por hora vazio --
+,
 
 -- Pagina localização --
 ('localizacao', '<div class="articleLocalizacao">
@@ -502,4 +443,52 @@ INSERT INTO ingressos (tipo,descricao) VALUES
 <a href="imagens/ingresso6.png" download="ingresso_familia" class="btn btn-primary mt-3"><i class="bi bi-download"></i> Baixar ingresso</a>
 ');
 
+-- inserindo integrantes na pagina quem somos --
 
+INSERT INTO quemsomos (conteudo_imagem, imagem_conteudo) VALUES 
+('
+                    <figure>
+                        <img src="imagens/Bryan.png" alt="Imagem do Bryan" class="img-fluid rounded">
+                    </figure>
+              ','<h2>Bryan Cadmiel Evangelista de Souza</h2>
+                    <h3>RA: 2650832413001</h3>
+                    <p>Conhecido simplesmente como Bryan, é um jovem de 22 anos residente em Mairinque, São Paulo. Nascido em Mairinque no dia 3 de fevereiro de 2002, Bryan é irmão de quatro meninos e uma menina. Sua trajetória educacional começou na Escola Estadual Altina Julia de Oliveira, onde concluiu seu ensino médio. Demonstrando interesse precoce pela área de tecnologia, Bryan cursou Lógica de Programação pela Universidade de São Paulo (USP), o que lhe abriu portas para o campo digital. Além de seu comprometimento acadêmico, Bryan possui hobbies que revelam um interesse profundo por temas como sobrevivência e auto-suficiência. Estas atividades refletem seu desejo de se preparar para situações adversas e seu gosto por aprender constantemente. Atualmente, Bryan dedica-se a trabalhos de gerenciamento de redes sociais, criação de sites e produção de mídia digital. Ele aspira a uma carreira que lhe permita trabalhar de qualquer lugar do mundo, buscando sempre a calma e o contínuo aprimoramento profissional. Inspirado pelo exemplo de seus pais e avós, que sempre agiram de forma correta e transparente, Bryan segue uma trajetória orientada por princípios sólidos. A decisão de cursar a Faculdade de Tecnologia foi influenciada por uma profunda crença em Deus e no direcionamento divino em sua vida sendo Profetizado por duas vezes a área tecnológica em sua vida e eventos como a inscrição para a faculdade em questão ser indicada por um amigo após este evento. Demonstrando sua fé e a confiança nos caminhos que escolhe seguir. Bryan é um exemplo de jovem determinado, que alia fé, família e profissional.</p>
+                    <p>Funções: Coder e designer (UI/UX)</p>
+                    <div>
+                    <a href="noticias.php" class="btn btn-primary w-5"><i class="bi bi-newspaper me-2"></i> Notícias</a>
+                    <a href="programacao.php" class="btn btn-primary w-5"><i class="bi bi-calendar"></i> Programação</a>
+                    <a href="localizacao.php" class="btn btn-primary w-5"><i class="bi bi-geo-alt me-2"></i> Localização</a>
+                    </div>')
+	,('
+                    <figure>
+                        <img src="imagens/livia.jpg" alt="Imagem Da Lívia" class="img-fluid rounded">
+                    </figure>
+                ','
+                    <h2>Lívia Ferreira Dias</h2>
+                    <h3>RA: 2650832413016</h3>
+                    <p>Conhecida como Vênus, nasceu em São Roque em 29 de dezembro de 2004, e tem 19 anos. Ela sempre viveu nesta cidade, onde ainda reside. Concluiu o ensino médio no Instituto Federal Campus São Roque, onde também fez um curso técnico em meio ambiente. Lívia tem uma irmã mais nova, com quem mantém um vínculo familiar forte. Ela possui um interesse profundo por jogos online e design gráfico, hobbies que utiliza para se expressar e desenvolver habilidades criativas. Susan Kare, uma pioneira no design de interfaces gráficas, é sua grande inspiração. Lívia trabalha como recepcionista em uma clínica de saúde ocupacional, onde adquiriu valiosas habilidades de comunicação e organização. Atualmente, cursa Sistemas para Internet na Faculdade de Tecnologia, uma área que considera promissora em termos de empregabilidade. Seu objetivo é se formar em breve, continuar com cursos de pós-graduação e alcançar uma posição que ofereça um bom emprego e um salário satisfatório, consolidando uma carreira no setor de tecnologia.</p>
+                    <p>Funções: Líder, Coder e designer (UI/UX)</p>
+                    <div>
+                        <a href="business.php" class="btn btn-primary me-2"><i class="bi bi-briefcase-fill me-2"></i>Business</a>
+                        <a href="index.php" class="btn btn-primary me-2"><i class="bi bi-house-door-fill me-2"></i>Home</a>
+                        <a href="ingressos.php" class="btn btn-primary"><i class="bi bi-ticket-perforated-fill me-2"></i>Ingressos</a>
+                    </div>
+               ')
+,('
+ <figure>
+ <img src="imagens/Wesley.png" alt="Imagem do Wesley" class="img-fluid rounded">
+</figure>'
+,'
+                    <h2>Wesley Washington de Oliveira dos Santos Brito</h2>
+                    <h3>RA: 2650832413025</h3>
+                    <p>Conhecido como Wesley, tem 26 anos, é morador de São Roque desde sempre e fez o Ensino Médio na Escola Horácio Manley Lane. Iniciou Engenharia Civil na Uniso, mas a vida o trouxe a ser mecânico no bairro onde reside. Está em processo de mudança para áreas de tecnologia e gosta de jogos, filmes e séries. Seu objetivo é trabalhar remotamente e aproveitar a vida. Seu caminho até os dias de hoje é inspirado por superações, e ele busca evoluir por determinação.</p>
+                    <p>Funções: Coder e designer (UI/UX)</p>
+                    <div>
+                        <a href="faq.php" class="btn btn-primary me-2"><i class="bi bi-question-circle-fill me-2"></i>FAQ</a>
+                        <a href="normas.php" class="btn btn-primary me-2"><i class="bi bi-file-earmark-text-fill me-2"></i>Normas</a>
+                        <a href="quem_somos.php" class="btn btn-primary"><i class="bi bi-person-lines-fill me-2"></i>Quem Somos</a>
+</div>');
+
+-- inserindo noticias na pagina noticia --
+
+-- inserindo imagens pelo mysql --

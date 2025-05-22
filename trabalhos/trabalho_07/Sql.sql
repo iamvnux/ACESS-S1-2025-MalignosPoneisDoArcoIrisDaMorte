@@ -18,13 +18,7 @@ CREATE TABLE faq (
     resposta TEXT NOT NULL
 );
 
--- Tabela para "Business" (parceiros, patrocinadores, etc)
-CREATE TABLE business (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    descricao TEXT,
-    imagem VARCHAR(255)
-);
+
 
 -- Tabela para notícias
 CREATE TABLE noticias (
@@ -65,16 +59,6 @@ CREATE TABLE quemsomos (
     conteudo TEXT
 );
 
--- Tabela de localização
-CREATE TABLE localizacao (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    endereco TEXT,
-    mapa TEXT
-);
 
--- Tabela para dados de contato
-CREATE TABLE contatos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100),
-   contato VARCHAR(255)
-);
+
+
