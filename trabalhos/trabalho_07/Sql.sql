@@ -1,7 +1,6 @@
-Estrutura de Banco de Dados para o site
+-- Estrutura do Banco de Dados para o site --
 
-
-CREATE DATABASE Site;
+ CREATE DATABASE Site;
 USE Site;
 
 -- Tabela para armazenar textos genéricos de páginas
