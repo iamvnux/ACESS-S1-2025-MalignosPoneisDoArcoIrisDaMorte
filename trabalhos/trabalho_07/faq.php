@@ -22,33 +22,40 @@ $conn->close();
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="css/css.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
+    <title>FAQ</title>
 </head>
 
 <body>
-    <?php include('php/header.php'); ?>
+    <header role="banner" aria-label="Cabeçalho do site">
+        <?php include('php/header.php'); ?>
+    </header>
 
-    <div class="container my-5">
-        <div class="row gy-5">
-        <div class="col-lg-5 offset-lg-1">
-            <?php echo $conteudo; ?>
+    <main role="main" id="conteudo-principal" tabindex="-1" aria-label="Conteúdo principal da página">
+        <div class="container my-5">
+            <div class="row gy-5">
+                <section class="col-lg-5 offset-lg-1" aria-label="Conteúdo principal dinâmico">
+                    <?php echo $conteudo; ?>
+                </section>
+                <aside class="col-lg-5" aria-label="Perguntas frequentes">
+                    <?php include('php/perguntasfaq.php'); ?>
+                </aside>
+            </div>
         </div>
-        <div class="col-lg-5">
-            <?php include('php/perguntasfaq.php') ?>
-        </div>
-        </div>
-    </div>
+    </main>
 
-    <?php include('php/footer.php'); ?>
+    <footer role="contentinfo" aria-label="Rodapé do site com informações adicionais">
+        <?php include('php/footer.php'); ?>
+    </footer>
 </body>
 
 </html>
