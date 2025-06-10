@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "Projeto Integrador Fatecon Hq's",
+  "short_name": "Fatecon Hq's",
+  "description": "Elaborado como projeto integrador do grupo 'Malignos Poneis Do Arcoiris Da Morte', esta em sua fase final.",
+  "start_url": "/",
+  
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#2d62b9",
+  "icons": [
+    {
+      "src": "web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+    
+  ],
+  "scope": "/",
+  "orientation": "portrait"
+}
