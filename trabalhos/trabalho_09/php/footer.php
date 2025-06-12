@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos</title>
-    <link rel="stylesheet" href="../css/css.css">
-</head>
 
-<body>
 
 <footer class="container-fluid bg-custom">
         <div>&copy;&nbsp;Malignos Pôneis do Arco-Íris da Morte</div>
@@ -27,5 +18,3 @@
         </nav>
     </footer>
 
-</body>
-</html>

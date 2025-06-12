@@ -1,8 +1,8 @@
 
 
-<body>
 
-<header class="text-light bg-custom">
+
+<div class="text-light bg-custom">
     <nav class="navbar navbar-expand-lg bg-custom">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -42,6 +42,6 @@
             </div>
         </div>
     </nav>
-</header>
 
-</body>
+</div>
+
